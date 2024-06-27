@@ -190,7 +190,7 @@ private:
 	void UpdateDrawOnDrawingBoards();
 
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "InteractBrush|Drawing", meta = (DisplayName = "Calculate Wheel Info"))
 	FBrushWheelData CalculateWheelInfo(FTransform CurrentTransform, FTransform PreviousTransform, AWorldDrawingBoard* Board, float  CurrentHeight, FVector2D CanvasSize, float
 	                               PreviousHeight, float WheelRadius);
 	float GetAngleRatio(FVector2D Input);
